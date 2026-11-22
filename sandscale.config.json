@@ -1,0 +1,10 @@
+{
+  "timeoutSeconds": 300,
+  "runTimeoutSeconds": 30,
+  "workdir": "/workspace",
+  "labels": { "source": "agent-quickstart" },
+  "languages": {
+    "python": { "template": "builtin:python", "file": "main.py", "command": ["python3", "main.py"] },
+    "node":   { "template": "builtin:node",   "file": "main.js", "command": ["node", "main.js"] }
+  }
+}
